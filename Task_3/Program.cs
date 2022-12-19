@@ -1,7 +1,7 @@
 ﻿// решение задачи в рамках одной недели
-int[] array = {0, 1, 2, 3, 4, 5, 6, 7};
-// Console.WriteLine(string.Join(",", array));
-Console.WriteLine($"Какой день проверяем?");
+int[] array = Enumerable.Range(0, 8).ToArray();
+Console.WriteLine("Итак в неделе семь дней, первый день - понедельник.");
+Console.WriteLine($"Какой по счету день проверяем?");
 int b = Convert.ToInt32(Console.ReadLine());
 
 if (((array[b] % 7) == 0) || ((array[b] % 6) == 0))
